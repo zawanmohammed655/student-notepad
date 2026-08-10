@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📝 My Note App</h1>
+
+        <div class="note-form">
+            <input type="text" id="title" placeholder="Note title">
+            <textarea id="content" placeholder="Write your note..."></textarea>
+
+            <button id="saveBtn" onclick="saveNote()">Add Note</button>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search notes..."
+            oninput="displayNotes()"
+        >
+
+        <div id="notesContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Note App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>📝 My Notes</h1>
+            <button id="darkModeBtn" onclick="toggleDarkMode()">🌙 Dark</button>
+        </div>
+
+        <div class="note-form">
+            <input type="text" id="title" placeholder="Note title">
+
+            <textarea
+                id="content"
+                placeholder="Write your note..."
+            ></textarea>
+
+            <button id="saveBtn" onclick="saveNote()">Add Note</button>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search notes..."
+            oninput="displayNotes()"
+        >
+
+        <div id="notesContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

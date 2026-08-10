@@ -1,0 +1,273 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.note-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background: #007bff;
+    margin-right: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+.note {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.note h2 {
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.note p {
+    color: #555;
+    white-space: pre-wrap;
+    margin-bottom: 15px;
+}
+
+.edit-btn {
+    background: #28a745;
+}
+
+.delete-btn {
+    background: #dc3545;
+} */
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f3f6;
+    color: #222;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #333;
+}
+
+#darkModeBtn {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FORM */
+
+.note-form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+/* BUTTON */
+
+button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    background: #007bff;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+/* SEARCH */
+
+#search {
+    background: white;
+    margin-bottom: 20px;
+}
+
+/* NOTES */
+
+.note {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.note:hover {
+    transform: translateY(-2px);
+}
+
+.note h2 {
+    margin-bottom: 8px;
+}
+
+.note p {
+    color: #555;
+    white-space: pre-wrap;
+    margin-bottom: 12px;
+}
+
+.note-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.edit-btn {
+    background: #28a745;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+/* DARK MODE */
+
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body.dark .note-form,
+body.dark .note {
+    background: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+body.dark input,
+body.dark textarea,
+body.dark #search {
+    background: #2a2a2a;
+    color: white;
+    border-color: #444;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #aaa;
+}
+
+body.dark .note p {
+    color: #ccc;
+}
+
+body.dark .note-date {
+    color: #999;
+}
+
+body.dark #darkModeBtn {
+    background: #f5f5f5;
+    color: #222;
+}
